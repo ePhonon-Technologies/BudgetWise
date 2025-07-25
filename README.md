@@ -1,146 +1,150 @@
-# 💰 Fintracker - Personal Finance Tracker  
+# 💰 Fintracker – Smart Personal Finance Tracker
 
-![Fintracker Banner](https://via.placeholder.com/1200x400/4f46e5/ffffff?text=Fintracker+-+Smart+Expense+Management)  
-[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![React](https://img.shields.io/badge/React-18.2.0-%2361DAFB)](https://react.dev/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.95.0-%2300C7B7)](https://fastapi.tiangolo.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16.0-%23336791)](https://www.postgresql.org/)
+<div align="center">
+  <img src="https://via.placeholder.com/1200x400/4f46e5/ffffff?text=Fintracker+-+Smart+Expense+Management" alt="Fintracker Banner" />
+  
+  <p><strong>Track expenses, set budgets, and visualize your spending – effortlessly.</strong></p>
 
-> **Track expenses, set budgets, and visualize spending effortlessly**  
-
----
-
-## ✨ Features  
-
-✅ **User Authentication** – Secure signup/login with JWT  
-✅ **Expense Management** – Add, edit, and categorize transactions  
-✅ **Budget Targets** – Set monthly spending limits per category  
-✅ **Data Visualization** – Interactive charts (Bar & Doughnut)  
-✅ **Responsive UI** – Works on mobile & desktop  
+  <p>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License" /></a>
+    <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18.2.0-%2361DAFB" alt="React" /></a>
+    <a href="https://fastapi.tiangolo.com/"><img src="https://img.shields.io/badge/FastAPI-0.95.0-%2300C7B7" alt="FastAPI" /></a>
+    <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-16.0-%23336791" alt="PostgreSQL" /></a>
+  </p>
+</div>
 
 ---
 
-# Fintracker
-Personal Finance Tracking Application
+## ✨ Key Features
 
-
-## 🌟 Overview
-
-This is a **Full Stack Expense Tracker Application** that helps users manage their expenses by creating categories, setting monthly targets, and visualizing spending trends through bar and charts and doughnut charts. Built using **React** for the frontend and **FastAPI** for the backend, it provides an intuitive interface and efficient performance.
-
----
-
-## 🛠️ **Features**
-
-- **User Authentication**: Register and login securely.
-- **Category Management**: Add, edit, and delete expense categories.
-- **Expense Tracking**: Keep a record of expenses and their details.
-- **Bar Charts**: Visualize spending trends with targets highlighted on the chart.
-- **Responsive UI**: Designed to work seamlessly on both desktop and mobile devices.
+| Feature               | Description                                                  |
+|----------------------|--------------------------------------------------------------|
+| 🔐 **JWT Auth**       | Secure registration and login using JWT tokens               |
+| 🧾 **Expense Manager**| Add, edit, categorize, and track spending easily             |
+| 🎯 **Budget Targets** | Set and manage monthly spending limits by category           |
+| 📊 **Data Visualization** | Bar & doughnut charts to analyze and compare expenses   |
+| 📱 **Responsive UI**  | Optimized for mobile and desktop screens                     |
 
 ---
 
-## 🛠️ **Tech Stack**
+## 🌐 Overview
 
-### **Frontend**:
-- **React**: JavaScript library for building user interfaces.
-- **React Bootstrap**: For responsive and stylish components.
-- **Chart.js**: To create bar charts for visualizing data.
-
-### **Backend**:
-- **FastAPI**: High-performance Python backend framework.
-- **PostgresDB**: SQL database for storing users, categories, and expenses.
-
-### **Tools**:
-- **Docker**: Containerization for seamless deployment.
-- **GitHub Actions**: CI/CD for automated deployments.
+Fintracker is a **full-stack personal finance manager** to help individuals organize and track their expenses. Built with a **React frontend** and **FastAPI backend**, the app allows users to set budgets, categorize expenses, and gain insights with visual analytics.
 
 ---
 
-## 🔧 **Installation**
+## 🧱 Tech Stack
 
-### Prerequisites:
-- Node.js (v16 or later)
-- Python 3.10 or later
-- Postgres server (Version 17 or later)
-- Docker (optional but recommended for deployment)
+### 🔹 Frontend
+- **React**
+- **React Bootstrap**
+- **Chart.js**
+- **Vite** (for fast builds and dev server)
 
-### Steps:
+### 🔸 Backend
+- **FastAPI**
+- **PostgreSQL + SQLAlchemy**
+- **Pydantic** (for validation)
+- **JWT & OAuth2**
+- **Uvicorn** (ASGI server)
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/Airborne101st/fin-tracker.git
-    cd fin-tracker
-    ```
-
-2. **Set Up the Backend**:
-    - Navigate to the `backend` folder:
-      ```bash
-      cd app
-      ```
-    - Install dependencies:
-      ```bash
-      pip install -r requirements.txt
-      ```
-    - Create a `.env` file and configure environment variables:
-      ```env
-      DATABASE_URI=postgresql://postgres:username@localhost:5432/fintracker_db
-      JWT_SECRET=your_secret_key
-      ```
-    - Run the FastAPI server:
-      ```bash
-      uvicorn app.main:app
-      ```
-
-3. **Set Up the Frontend**:
-    - Navigate to the `frontend` folder:
-      ```bash
-      cd frontend
-      ```
-    - Install dependencies:
-      ```bash
-      npm install
-      ```
-    - Start the React development server:
-      ```bash
-      npm run dev
-      ```
-
-4. **Access the Application**:
-    - Open [http://localhost:5173](http://localhost:5173) to view the application.
+### ⚙️ Tools
+- **Docker** (for containerization)
+- **GitHub Actions** (CI/CD)
+- **.env config** (secure secrets handling)
 
 ---
 
-## 🧑‍💻 **Usage**
+## 🚀 Getting Started
 
-1. Register your user.
-2. Login to your account
-3. Create categories and set monthly targets.
-4. Add expenses under specific categories.
-5. Visualize your spending with bar and doughnut charts, including target indicators.
-
----
-
-## 🖼️ **Screenshots**
-
-### Bar Chart with Targets:
-![Bar Chart](fintracker_dashboard.png)
-
-### Category Page:
-![Bar Chart](fintracker_category.png)
-
-### Expenses Page:
-![Bar Chart](fintracker_expenses.png)
+### ✅ Prerequisites
+- Node.js (v16+)
+- Python 3.10+
+- PostgreSQL (v16+)
+- Docker (optional but recommended)
 
 ---
 
+### 📦 Installation Steps
 
-## 🤝 **Contributing**
+#### 1. Clone the Repository
+``bash
+git clone https://github.com/Airborne101st/fin-tracker.git
+cd fin-tracker
 
-We welcome contributions! To get started:
 
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/your-feature
 
+2. Backend Setup
+bash
+Copy
+Edit
+cd app
+pip install -r requirements.txt
+Create a .env file:
+
+env
+Copy
+Edit
+DATABASE_URI=postgresql://postgres:username@localhost:5432/fintracker_db
+JWT_SECRET=your_secret_key
+Run FastAPI server:
+
+bash
+Copy
+Edit
+uvicorn app.main:app --reload
+3. Frontend Setup
+bash
+Copy
+Edit
+cd ../frontend
+npm install
+npm run dev
+🔗 Application URL
+Visit the frontend at: http://localhost:5173
+
+🧑‍💻 How to Use
+✅ Register a new account
+
+🔐 Login using JWT authentication
+
+🧾 Add categories and set monthly budgets
+
+💸 Add expenses and assign them to categories
+
+📊 View bar/doughnut charts with monthly targets
+
+🖼️ Screenshots
+<div align="center"> <img src="fintracker_dashboard.png" alt="Dashboard - Bar Chart" width="300" /> <img src="fintracker_category.png" alt="Categories Page" width="300" /> <img src="fintracker_expenses.png" alt="Expenses Page" width="300" /> </div>
+🧩 Future Enhancements
+🔔 Notification alerts for over-budget categories
+
+📅 Recurring expenses & reminders
+
+📤 Export reports to PDF/CSV
+
+🌐 Multi-user shared accounts (family budgeting)
+
+📱 PWA support for mobile offline use
+
+🤝 Contributing
+We welcome contributions!
+
+Fork this repository
+
+Create your feature branch:
+
+bash
+Copy
+Edit
+git checkout -b feature/your-feature
+Commit your changes
+
+Push to the branch
+
+Open a Pull Request 🎉
+
+📄 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+<div align="center"> <b>Fintracker</b> – Your smart partner in managing money 💼 </div> ```
