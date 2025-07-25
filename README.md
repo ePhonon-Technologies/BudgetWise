@@ -1,7 +1,7 @@
 # 💰 Fintracker – Smart Personal Finance Tracker
 
 <div align="center">
-  <img src="https://via.placeholder.com/1200x400/4f46e5/ffffff?text=Fintracker+-+Smart+Expense+Management" alt="Fintracker Banner" />
+  <img src="personal finance manager.jpeg" alt="Fintracker Banner" />
   
   <p><strong>Track expenses, set budgets, and visualize your spending – effortlessly.</strong></p>
 
